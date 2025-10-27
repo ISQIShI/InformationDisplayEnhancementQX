@@ -4,13 +4,12 @@ using System.Collections.Generic;
 using System.Reflection;
 using UnityEngine;
 
-
 #nullable disable
 namespace InformationDisplayEnhancementQX
 {
     public class ModBehaviour : Duckov.Modding.ModBehaviour
     {
-        public const string HarmonyId = "InformationDisplayEnhancementQX";
+        public const string HarmonyId = nameof(InformationDisplayEnhancementQX);
 
         public static ModBehaviour Instance { get; private set; }
 
@@ -48,7 +47,7 @@ namespace InformationDisplayEnhancementQX
 
             Instance = this;
 
-            Debug.Log("InformationDisplayEnhancementQX 已加载");
+            LogHelper.Instance.LogTest($"{nameof(InformationDisplayEnhancementQX)} 已加载");
         }
 
         protected override void OnBeforeDeactivate()
@@ -69,7 +68,7 @@ namespace InformationDisplayEnhancementQX
 
             Instance = null;
 
-            Debug.Log("InformationDisplayEnhancementQX 已卸载");
+            LogHelper.Instance.LogTest($"{nameof(InformationDisplayEnhancementQX)} 已卸载");
         }
 
     }
