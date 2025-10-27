@@ -1,0 +1,8 @@
+{
+  "InfoDisplayEnhancementQX.ModSettingButton": "[Mod]資訊顯示增強",
+  "InfoDisplayEnhancementQX.Option_Off": "關閉",
+  "InfoDisplayEnhancementQX.Option_On": "開啟",
+  "Options_InfoDisplayEnhancementQX.DisplayHealthValue": "顯示生命值",
+  "Options_InfoDisplayEnhancementQX.DisplayCharacterName": "顯示角色名稱",
+  "Options_InfoDisplayEnhancementQX.DecimalPlacesOfHealthValue": "生命值的小數位數"
+}
