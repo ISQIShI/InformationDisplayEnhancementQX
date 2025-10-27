@@ -4,5 +4,10 @@
   "InfoDisplayEnhancementQX.Option_On": "Open",
   "Options_InfoDisplayEnhancementQX.DisplayHealthValue": "Display Health Value",
   "Options_InfoDisplayEnhancementQX.DisplayCharacterName": "Display Character Name",
-  "Options_InfoDisplayEnhancementQX.DecimalPlacesOfHealthValue": "Decimal Places of Health Value"
+  "Options_InfoDisplayEnhancementQX.DecimalPlacesOfHealthValue": "Decimal Places of Health Value",
+  "InfoDisplayEnhancementQX.Option_AllCharacter": "All Characters",
+  "InfoDisplayEnhancementQX.Option_OnlyPlayer": "Only Player",
+  "InfoDisplayEnhancementQX.Option_OnlyEnemy": "Only Enemy",
+  "Options_InfoDisplayEnhancementQX.DisplayKillCountTaskTarget": "Display Kill Count Task Target<sub>Experimental</sub>",
+  "InfoDisplayEnhancementQX.Text_TaskTarget": "Task Target: "
 }
