@@ -9,5 +9,6 @@
   "InfoDisplayEnhancementQX.Option_OnlyPlayer": "プレイヤーのみ",
   "InfoDisplayEnhancementQX.Option_OnlyEnemy": "敵のみ",
   "Options_InfoDisplayEnhancementQX.DisplayKillCountTaskTarget": "キルカウント任務目標を表示<sub>実験的</sub>",
-  "InfoDisplayEnhancementQX.Text_TaskTarget": "任務目標："
+  "InfoDisplayEnhancementQX.Text_TaskTarget": "任務目標：",
+  "Options_InfoDisplayEnhancementQX.DisplayBuildingName": "建物名を表示"
 }

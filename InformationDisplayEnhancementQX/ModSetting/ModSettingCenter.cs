@@ -55,6 +55,31 @@ namespace InformationDisplayEnhancementQX.ModSetting
             }
         }
 
+        private static bool _showBuildingName = true;
+        public static bool ShowBuildingName
+        {
+            get
+            {
+                return _showBuildingName;
+            }
+            set
+            {
+                if (_showBuildingName != value)
+                {
+                    _showBuildingName = value;
+                    OptionsManager.Save<int>(DisplayBuildingName.KEY, value ? 1 : 0);
+                    if (value)
+                    {
+                        BuildingNameDisplay.Init();
+                    }
+                    else
+                    {
+                        BuildingNameDisplay.Release();
+                    }
+                }
+            }
+        }
+
         private static bool _showKillCountTaskTarget = true;
         public static bool ShowKillCountTaskTarget
         {
@@ -131,6 +156,7 @@ namespace InformationDisplayEnhancementQX.ModSetting
             _showCharacterName = OptionsManager.Load<int>(DisplayCharacterName.KEY, 1) == 0 ? false : true;
             _showKillCountTaskTarget = OptionsManager.Load<int>(DisplayKillCountTaskTarget.KEY, 1) == 0 ? false : true;
             _decimalPlacesOfHealthValue = OptionsManager.Load<int>(OptionsProvider.DecimalPlacesOfHealthValue.KEY, 1);
+            _showBuildingName = OptionsManager.Load<int>(DisplayBuildingName.KEY, 1) == 0 ? false : true;
         }
 
         public static void Release()
@@ -196,6 +222,7 @@ namespace InformationDisplayEnhancementQX.ModSetting
             SettingUIHelper.Instance.CreateDropdown<DisplayHealthValue>(settingPanelObj);
             SettingUIHelper.Instance.CreateDropdown<OptionsProvider.DecimalPlacesOfHealthValue>(settingPanelObj);
             SettingUIHelper.Instance.CreateDropdown<DisplayCharacterName>(settingPanelObj);
+            SettingUIHelper.Instance.CreateDropdown<DisplayBuildingName>(settingPanelObj);
             SettingUIHelper.Instance.CreateDropdown<DisplayKillCountTaskTarget>(settingPanelObj);
             ___tabButtons.Add(tabButton);
             TabButtons.AddLast((tabButton, __instance));

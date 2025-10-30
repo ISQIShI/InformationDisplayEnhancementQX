@@ -25,7 +25,8 @@ namespace InformationDisplayEnhancementQX.Utils
             [$"{KeyPrefix}Option_OnlyPlayer"] = "Only Player",
             [$"{KeyPrefix}Option_OnlyEnemy"] = "Only Enemy",
             [GetDropdownOptionLabelKey(DisplayKillCountTaskTarget.KEY)] = "Display Kill Count Task Target",
-            [$"{KeyPrefix}Text_TaskTarget"] = "Task Target: "
+            [$"{KeyPrefix}Text_TaskTarget"] = "Task Target: ",
+            [GetDropdownOptionLabelKey(DisplayBuildingName.KEY)] = "Display Building Name",
         };
 
         public static void Init()

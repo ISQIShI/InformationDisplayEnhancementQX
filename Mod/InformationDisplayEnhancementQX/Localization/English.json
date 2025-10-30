@@ -9,5 +9,6 @@
   "InfoDisplayEnhancementQX.Option_OnlyPlayer": "Only Player",
   "InfoDisplayEnhancementQX.Option_OnlyEnemy": "Only Enemy",
   "Options_InfoDisplayEnhancementQX.DisplayKillCountTaskTarget": "Display Kill Count Task Target<sub>Experimental</sub>",
-  "InfoDisplayEnhancementQX.Text_TaskTarget": "Task Target: "
+  "InfoDisplayEnhancementQX.Text_TaskTarget": "Task Target: ",
+  "Options_InfoDisplayEnhancementQX.DisplayBuildingName": "Display Building Name"
 }

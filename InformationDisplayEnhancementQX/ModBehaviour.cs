@@ -23,7 +23,7 @@ namespace InformationDisplayEnhancementQX
 
             LocalizationHelper.Init();
             ModSettingCenter.Init();
-            BuildingNameDisplay.Init();
+            if (ModSettingCenter.ShowBuildingName) BuildingNameDisplay.Init();
 
             // 加载 Harmony 补丁
             var assembly = Assembly.GetExecutingAssembly();
@@ -57,7 +57,7 @@ namespace InformationDisplayEnhancementQX
 
             LocalizationHelper.Release();
             ModSettingCenter.Release();
-            BuildingNameDisplay.Release();
+            if (ModSettingCenter.ShowBuildingName) BuildingNameDisplay.Release();
 
             // 卸载 Harmony 补丁
             HarmonyHelperObj.HarmonyInstance.UnpatchAll(HarmonyId);
