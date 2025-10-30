@@ -234,13 +234,19 @@ namespace InformationDisplayEnhancementQX
 
             public bool VertifyTarget(HealthBar healthBar)
             {
+                Health health = healthBar.target;
+                if (!health) return false;
+                // 过滤玩家阵营
+                if (health.team == Teams.player)
+                {
+                    return false;
+                }
                 // 检测场景是否满足
                 if (!Task.SceneRequirementSatisfied) return false;
                 // 检测敌人类型是否满足
                 if (RequireEnemyType != null)
                 {
-                    Health health = healthBar.target;
-                    if (!health) return false;
+
                     CharacterMainControl characterMainControl = health.TryGetCharacter();
                     if (!characterMainControl) return false;
                     CharacterRandomPreset characterPreset = characterMainControl.characterPreset;
